@@ -30,3 +30,6 @@ Route::post('addEmployee', [EmployeeController::class,'addEmployee']);
 
 //Update employee
 Route::put('updateEmployee/{id}', [EmployeeController::class,'updateEmployee']);
+
+//Delete employee
+Route::delete('deleteEmployee/{id}',[EmployeeController::class,'deleteEmployee']);
