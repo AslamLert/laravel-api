@@ -24,3 +24,6 @@ Route::get('employees',[EmployeeController::class,'getEmployee']);
 
 //Get Specific employee detail
 Route::get('employees/{id}',[EmployeeController::class,'getEmployeeById']);
+
+//Add employee
+Route::post('addEmployee', [EmployeeController::class,'addEmployee']);
