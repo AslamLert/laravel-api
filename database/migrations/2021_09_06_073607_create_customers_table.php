@@ -21,7 +21,7 @@ class CreateCustomersTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('email');
-            $table->decimal('salary', 5, 2);
+            $table->float('salary', 8, 2);
             $table->timestamps();
         });
     }
