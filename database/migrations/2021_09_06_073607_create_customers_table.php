@@ -14,7 +14,14 @@ class CreateCustomersTable extends Migration
     public function up()
     {
         Schema::create('customers', function (Blueprint $table) {
+
+            $table->charset = 'utf8';
+            $table->collation = 'utf8_unicode_ci';
+
             $table->id();
+            $table->string('name');
+            $table->string('email');
+            $table->integer('salary');
             $table->timestamps();
         });
     }
